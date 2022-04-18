@@ -175,6 +175,8 @@ textarea {
 
   /* home */
   .home-section {
+    background: url('https://github.com/llting592/portfolio/blob/master/src/Assets/pexels-jakub-novacek-924824.jpg?raw=true');
+    height: 100%;
     align-items: center;
     position: relative;
     z-index: -1;
