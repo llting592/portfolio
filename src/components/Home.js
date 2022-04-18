@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Type from './Type';
 
 
+
 function Home() {
     return (
         <div>

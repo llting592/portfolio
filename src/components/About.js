@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Skills from './Skills';
 import Socials from './Socials';
 
+
 function About() {
     return (
         <Container fluid className="about-section" id="about">

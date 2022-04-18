@@ -175,13 +175,16 @@ textarea {
 
   /* home */
   .home-section {
-    background: url('https://github.com/llting592/portfolio/blob/master/src/Assets/pexels-jakub-novacek-924824.jpg?raw=true');
-    height: 100%;
+    background: url('https://github.com/llting592/portfolio/blob/master/src/Assets/pexels-eberhard-grossgasteiger-1624504%20(1).jpg?raw=true');
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
     align-items: center;
     position: relative;
     z-index: -1;
-    background-position: top center;
-    background-repeat: no-repeat;
     padding-bottom: 30px !important;
     padding-top: 30px !important;
   }
@@ -192,6 +195,7 @@ textarea {
 
   /* about */
   .about-section {
+    
     position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;

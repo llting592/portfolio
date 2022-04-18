@@ -8,6 +8,7 @@ import techblog from '../Assets/demo.png'
 
 function Projects(){
     return (
+      <div className='background'>
         <Container fluid className="project-section">
           <Container>
             <h1 className="project-heading">
@@ -57,6 +58,7 @@ function Projects(){
             </Row>
           </Container>
         </Container>
+        </div>
       );
     }
 
