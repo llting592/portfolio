@@ -1,15 +1,22 @@
-const ProjectCard = ({ img, deploy, repo, name }) => {
-    return (
-        <div className='proj'>
-            <div className="proj-browser">
-                <div className="proj-circle"></div>
-                <a href={repo}><h6 className='proj-title'>{name}</h6></a>
-                <div className="proj-circle"></div>
-            </div>
-            <a href={deploy} target="_blank" rel='noreferrer'>
-                <img src={img} alt={name} className='proj-image'></img>
-            </a>
-        </div>
-    )
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { BiLinkExternal } from "react-icons/bi";
+
+function ProjectCards(props) {
+  return (
+    <Card className="project-card-view">
+      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify" }}>
+          {props.description}
+        </Card.Text>
+        <Button variant="primary" href={props.link} target="_blank">
+          <BiLinkExternal /> &nbsp;
+          {props.isBlog ? "View Blog" : "View Project"}
+        </Button>
+      </Card.Body>
+    </Card>
+  );
 }
-export default ProjectCard;
+export default ProjectCards;

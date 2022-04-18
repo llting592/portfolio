@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Skills from './Skills';
+import Socials from './Socials';
 
 function About() {
     return (
@@ -7,7 +8,7 @@ function About() {
             <Container>
                 <Row>
                     <Col md={8} className="about-description">
-                        <h1>
+                        <h1 className='about-me-header'>
                             About Me
                         </h1>
                         <p>
@@ -15,10 +16,11 @@ function About() {
                             <br/>
                             I am incredibly passionate about technology, and always looking to learn more technologies and improve my craft!
                         </p>
-                        <h1>
+                        <h1 className='skills-header'>
                             Skills
                         </h1>
                         <Skills />
+                        <Socials/>
                     </Col>
                 </Row>
             </Container>

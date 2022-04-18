@@ -3,10 +3,28 @@ import Socials from './Socials';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
+import {
+    AiFillGithub,
+    AiFillLinkedin
+} from 'react-icons/ai';
+import {FaRegEnvelope} from 'react-icons/fa'
 
 
 
 function Contact() {
+    const formRef = useRef()
+    const [done, setDone] = useState(false)
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_081k7sf', 'template_3e9eyzv', formRef.current, 'NJm_1Ks0xEEicgPGb')
+            .then((result)=>{
+                console.log(result.text);
+                setDone(true)
+            },
+            (error)=>{
+                console.log(error.text);
+            })
+    }
     // const formRef = useRef()
     // const [email, setEmail] = useState(false)
     // const handleSubmit = (e) => {
@@ -20,32 +38,58 @@ function Contact() {
     //             console.log(error.text);
     //         })
     // }
-    const handleOnSubmit = (e) => {
-        e.preventDefault();
-        emailjs.sendForm('service_081k7sf', 'template_3e9eyzv', e.target, 'NJm_1Ks0xEEicgPGb')
-        .then((result)=>{
-            console.log(result.text);
-            Swal.fire({
-                icon: 'success',
-                title: 'Message sent!'
-            })
-        }, (error) => {
-            console.log(error.text);
-            Swal.fire({
-                icon: 'error',
-                title: 'Something went wrong, please try again',
-                text: error.text,
-        })
-    });
-    e.target.reset()
-};
+//     const handleOnSubmit = (e) => {
+//         e.preventDefault();
+//         emailjs.sendForm('service_081k7sf', 'template_3e9eyzv', e.target, 'NJm_1Ks0xEEicgPGb')
+//         .then((result)=>{
+//             console.log(result.text);
+//             Swal.fire({
+//                 icon: 'success',
+//                 title: 'Message sent!'
+//             })
+//         }, (error) => {
+//             console.log(error.text);
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'Something went wrong, please try again',
+//                 text: error.text,
+//         })
+//     });
+//     e.target.reset()
+// };
 
 
     return (
-        <div>
-            <h1>Get in touch with me!</h1>
-            <Form onSubmit={handleOnSubmit}>
-                <Form.Field id='form-input-email'
+        <div className = 'contact-section'>
+            <div className ='contact-wrapper'>
+                <div className = 'contact-me'>
+                    <h1>Connect with me: </h1>
+                    <div className='contact-info'>
+                    <div className="c-info-item">
+                            <a href='mailto:llting592@gmail.com' target="_blank"><FaRegEnvelope/>llting592@gmail.com</a>
+                        </div>
+                        <div className="c-info-item">
+                            <a href='https://github.com/llting592' target="_blank"><AiFillGithub/>llting592</a>
+                        </div>
+                        <div className="c-info-item">
+                            <a href='https://www.linkedin.com/in/lloyd-ting-82b316182/' target="_blank"><AiFillLinkedin/>lloyd-ting</a>
+                        </div>
+                    </div>
+                </div>
+                <div className= 'contact-right'>
+                    <h1 className= 'contact-des'>Contact me</h1>
+                    <form onSubmit={handleOnSubmit}>
+                        <input type="text" placeholder='Name' name="user_name" />
+                        <input type="text" placeholder='Subject' name="user_subject" />
+                        <input type="text" placeholder='Email' name="user_email" />
+                        <textarea rows="5" placeholder='Message' name="message"/>
+                    </form>
+                    <Button type ='submit' color='green'>Submit</Button>
+                </div>
+            </div>
+            
+            
+                {/* <Form.Field id='form-input-email'
                 control = {Input}
                 label = 'Email'
                 name='user_email'
@@ -68,7 +112,7 @@ function Contact() {
                 name='user_message'
                 placeholder='Message...'
                 required
-                />
+                /> */}
                 {/* <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" required />
@@ -83,9 +127,8 @@ function Contact() {
                 </div>
                 <button type="submit">Submit</button>
                 {email && <div className = 'sent'> Message Sent!</div>} */}
-                <Button type ='submit' color='green'>Submit</Button>
-            </Form>
-            <Socials/>
+                
+            
         </div>
     )
 }

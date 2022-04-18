@@ -1,21 +1,38 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { IconContext } from 'react-icons';
 import {
     AiFillGithub,
     AiFillLinkedin
 } from 'react-icons/ai';
+import {FaRegEnvelope} from 'react-icons/fa'
 
 function Socials (){
     return (
         <Container>
-            <Row>
+            <Row className= 'social-row'>
                 <Col md = {12} className="contact-social">
-                    <h1>Or, connect with me on: </h1>
+                    <h1>Connect With Me: </h1>
+                    <li className='social-icon'>
+                    <a href='mailto:llting592@gmail.com'
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-color contact-social-icon"> 
+                        <IconContext.Provider value={{size:100}}>
+                    
+                        <FaRegEnvelope/>
+                
+                        </IconContext.Provider>
+                        </a>
+                    </li>
                     <li className = "social-icon">
                         <a href="https://github.com/llting592"
                         target="_blank"
                         rel="noreferrer"
                         className="icon-color contact-social-icon">
+                            <IconContext.Provider value={{size:100}}>
                             <AiFillGithub/>
+                            </IconContext.Provider>
+                            
                         </a>
                     </li>
                     <li className = "social-icon">
@@ -23,7 +40,9 @@ function Socials (){
                         target="_blank"
                         rel="noreferrer"
                         className="icon-color contact-social-icon">
+                            <IconContext.Provider value={{size:100}}>
                             <AiFillLinkedin/>
+                            </IconContext.Provider>
                         </a>
                     </li>
                 </Col>

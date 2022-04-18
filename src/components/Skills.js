@@ -16,31 +16,31 @@ import {
 function Skills() {
     return (
         <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiHtml5 />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiCss3 />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiJavascript />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiNodejsSmall />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiReact />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiMysql />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiBootstrap />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <DiMongodb />
             </Col>
-            <Col xs={3} className='skills-icons'>
+            <Col xs={3} md={2} className='skills-icons'>
                 <GrGraphQl />
             </Col>
         </Row>

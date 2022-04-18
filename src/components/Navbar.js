@@ -14,11 +14,14 @@ function Navbar() {
                                 <Link to="/">Home</Link>
                             </li>
                             <li className='Links'>
-                                <Link to='/projects'>Projects</Link>
+                                <Link to='/about'>About</Link>
                             </li>
                             <li className='Links'>
-                                <Link to='/contact'>Contact</Link>
+                                <Link to='/projects'>Projects</Link>
                             </li>
+                            {/* <li className='Links'>
+                                <Link to='/contact'>Contact</Link>
+                            </li> */}
                             <li className='Links'>
                                 <Link to='/resume'>Resume</Link>
                             </li>
