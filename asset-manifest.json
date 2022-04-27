@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d4d6072d.css",
-    "main.js": "/portfolio/static/js/main.3101e4a1.js",
+    "main.css": "/portfolio/static/css/main.872fcfa5.css",
+    "main.js": "/portfolio/static/js/main.614a2b8b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/welcomePage.png": "/portfolio/static/media/welcomePage.61cca665c9619dc4cabf.png",
     "static/media/home.png": "/portfolio/static/media/home.355a50c4e0bfab341870.png",
     "static/media/goodApplesScreenShot1.png": "/portfolio/static/media/goodApplesScreenShot1.57438c6e9c23c7e0510d.png",
+    "static/media/demo1.png": "/portfolio/static/media/demo1.0865445840da19087088.png",
+    "static/media/Weather-Dashboard-screenshot.png": "/portfolio/static/media/Weather-Dashboard-screenshot.714e2ddfbcc531ec68c2.png",
     "static/media/Resume.pdf": "/portfolio/static/media/Resume.fcc00679ff7eb401d8b1.pdf",
     "static/media/demo.png": "/portfolio/static/media/demo.0b8f6bd5dc37a3d25c66.png",
     "index.html": "/portfolio/index.html",
-    "main.d4d6072d.css.map": "/portfolio/static/css/main.d4d6072d.css.map",
-    "main.3101e4a1.js.map": "/portfolio/static/js/main.3101e4a1.js.map",
+    "main.872fcfa5.css.map": "/portfolio/static/css/main.872fcfa5.css.map",
+    "main.614a2b8b.js.map": "/portfolio/static/js/main.614a2b8b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4d6072d.css",
-    "static/js/main.3101e4a1.js"
+    "static/css/main.872fcfa5.css",
+    "static/js/main.614a2b8b.js"
   ]
 }
