@@ -11,7 +11,8 @@ function Socials (){
         <Container>
             <Row className= 'social-row'>
                 <Col md = {12} className="contact-social">
-                    <h1>Connect With Me: </h1>
+                    <h1>Connect with me!</h1>
+                    <h3>Feel free to email me at llting592@gmail.com, or connect with me on one of my socials below!</h3>
                     <li className='social-icon'>
                     <a href='mailto:llting592@gmail.com'
                         target="_blank"

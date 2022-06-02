@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Nav, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import './Layout.css'
 
 

@@ -24,7 +24,8 @@ function Projects() {
                 imgPath={goodApples}
                 isBlog={false}
                 title="Good Apples"
-                description="Product review aggregator that allows users to compare reviews and prices across a variety of e-commerce platforms."
+                description="Product review aggregator that allows users to compare reviews and prices across a variety of e-commerce platforms.
+                Built using HTML, Javascript, CSS, Bootstrap, JQuery, and APIs from RapidAPI."
                 link="https://github.com/llting592/GoodApples"
               />
             </Col>
@@ -34,7 +35,7 @@ function Projects() {
                 imgPath={foodHero}
                 isBlog={false}
                 title="Food Heroes"
-                description="Social media app based on restaurant experiences. Allows users to create restaurants they want to visit, as well as share and recommend experiences to friends."
+                description="Social media app based on restaurant experiences. Allows users to create restaurants they want to visit, as well as share and recommend experiences to friends. Built using Javascript, CSS, EJS, Passport.js, Express.js, MySQL, and Node.js"
                 link="https://github.com/llting592/FoodHeroes"
               />
             </Col>
@@ -44,7 +45,7 @@ function Projects() {
                 imgPath={Marketier}
                 isBlog={false}
                 title="Marketier"
-                description="Investment platform that allows users to watch and create portfolios of stocks, cryptocurrency and foreign exchanges. Also allows users to get the latest financial news from a variety of outlets."
+                description="Investment platform that allows users to watch and create portfolios of stocks, cryptocurrency and foreign exchanges. Also allows users to get the latest financial news from a variety of outlets. Built using Javascript, React, Bootstrap, GraphQL and Apollo."
                 link="https://github.com/llting592/marketier-lloyd"
               />
             </Col>
@@ -54,7 +55,7 @@ function Projects() {
                 imgPath={techblog}
                 isBlog={false}
                 title="Tech Blog"
-                description="Simple blog website that allows users to create an account, create posts, comment on other user posts and edit posts."
+                description="Blog website that allows users to create an account, create posts, comment on other user posts and edit posts. Built using Javascript, Express.js, MySQL, Sequelize and Handlebars.js"
                 link="https://github.com/llting592/Tech-Blog-Handlebars"
               />
             </Col>
@@ -64,7 +65,7 @@ function Projects() {
                 imgPath={weather}
                 isBlog={false}
                 title="Weather Dashboard"
-                description="Weather Dashboard that allows users to find a variety of weather parameters using Open Weather's API."
+                description="Weather Dashboard application that allows users to find a variety of weather parameters using Open Weather's API. Built using HTML, Javascript, CSS, JQuery and Bootstrap with API from Open Weather."
                 link="https://github.com/llting592/Weather-Dashboard"
               />
             </Col>
@@ -74,7 +75,7 @@ function Projects() {
                 imgPath={notetaker}
                 isBlog={false}
                 title="Express Note Taker"
-                description="Simple note taker application that utilizes express; allows users to create, save and delete notes."
+                description="Simple note taker application that allows users to create, save and delete notes. Built using HTML, Javascript, CSS, and Express.js."
                 link="https://github.com/llting592/Express-Note-Taker-App"
               />
             </Col>
